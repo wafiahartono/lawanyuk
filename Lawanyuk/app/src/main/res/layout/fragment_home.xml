@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/layout_header"
+        layout="@layout/layout_fragment_home_header" />
+
+    <include
+        android:id="@+id/layout_menu_report"
+        layout="@layout/item_menu_card"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@id/layout_menu_medical_facility"
+        app:layout_constraintEnd_toStartOf="@id/layout_menu_consultation"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_header"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <include
+        android:id="@+id/layout_menu_consultation"
+        layout="@layout/item_menu_card"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@id/layout_menu_machine_learning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/layout_menu_report"
+        app:layout_constraintTop_toBottomOf="@id/layout_header"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <include
+        android:id="@+id/layout_menu_medical_facility"
+        layout="@layout/item_menu_card"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/layout_menu_machine_learning"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_menu_report" />
+
+    <include
+        android:id="@+id/layout_menu_machine_learning"
+        layout="@layout/item_menu_card"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/layout_menu_medical_facility"
+        app:layout_constraintTop_toBottomOf="@id/layout_menu_consultation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_app"
+    app:startDestination="@id/home_fragment">
+
+    <action
+        android:id="@+id/action_authenticate"
+        app:destination="@id/onboarding_fragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        app:popUpTo="@id/navigation_app"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_register_user_data"
+        app:destination="@id/sign_up_fragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        app:popUpTo="@id/navigation_app"
+        app:popUpToInclusive="true">
+
+        <argument
+            android:name="googleAccount"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+    </action>
+
+    <fragment
+        android:id="@+id/onboarding_fragment"
+        android:name="com.lawanyuk.auth.onboarding.fragment.OnboardingFragment"
+        tools:layout="@layout/fragment_onboarding">
+
+        <action
+            android:id="@+id/action_show_auth_options"
+            app:destination="@id/auth_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/auth_fragment"
+        android:name="com.lawanyuk.auth.fragment.AuthFragment"
+        tools:layout="@layout/fragment_auth">
+
+        <action
+            android:id="@+id/action_sign_up"
+            app:destination="@id/sign_up_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_finish_authenticate"
+            app:destination="@id/home_fragment"
+            app:popUpTo="@id/auth_fragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_sign_in"
+            app:destination="@id/sign_in_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/sign_up_fragment"
+        android:name="com.lawanyuk.auth.signup.fragment.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+
+        <argument
+            android:name="googleAccount"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_finish_authenticate"
+            app:destination="@id/home_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/sign_up_fragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/sign_in_fragment"
+        android:name="com.lawanyuk.auth.signin.fragment.SignInFragment"
+        tools:layout="@layout/fragment_sign_in">
+
+        <action
+            android:id="@id/action_finish_authenticate"
+            app:destination="@id/home_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/sign_in_fragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.lawanyuk.home.fragment.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_open_report_menu"
+            app:destination="@id/report_list_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_open_consultation_menu"
+            app:destination="@id/consultation_list_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_open_medical_facility_menu"
+            app:destination="@id/medical_facility_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_open_machine_learning_menu"
+            app:destination="@id/machine_learning_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/report_list_fragment"
+        android:name="com.lawanyuk.home.report.list.fragment.ReportListFragment"
+        tools:layout="@layout/fragment_report_list">
+
+        <action
+            android:id="@+id/action_create_report"
+            app:destination="@id/create_report_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/create_report_fragment"
+        android:name="com.lawanyuk.home.report.create.fragment.CreateReportFragment"
+        tools:layout="@layout/fragment_create_report" />
+
+    <fragment
+        android:id="@+id/consultation_list_fragment"
+        android:name="com.lawanyuk.home.consultation.list.fragment.ConsultationListFragment"
+        tools:layout="@layout/fragment_consultation_list">
+
+        <action
+            android:id="@+id/action_open_chat"
+            app:destination="@id/consultation_chat_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+
+            <argument
+                android:name="healthProfessionalId"
+                app:argType="string" />
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/consultation_chat_fragment"
+        android:name="com.lawanyuk.home.consultation.chat.fragment.ConsultationChatFragment"
+        tools:layout="@layout/fragment_consultation_chat">
+
+        <argument
+            android:name="healthProfessionalId"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/medical_facility_fragment"
+        android:name="com.lawanyuk.home.medicalfacility.fragment.MedicalFacilityFragment"
+        tools:layout="@layout/fragment_medical_facility" />
+
+    <fragment
+        android:id="@+id/machine_learning_fragment"
+        android:name="com.lawanyuk.home.machinelearning.fragment.MachineLearningFragment"
+        tools:layout="@layout/fragment_machine_learning" />
+
+    <fragment
+        android:id="@+id/news_fragment"
+        android:name="com.lawanyuk.news.fragment.NewsFragment"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/reminder_fragment"
+        android:name="com.lawanyuk.reminder.fragment.ReminderFragment"
+        tools:layout="@layout/fragment_reminder" />
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.lawanyuk.profile.fragment.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

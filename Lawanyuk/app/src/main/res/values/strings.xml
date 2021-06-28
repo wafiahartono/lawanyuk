@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Lawanyuk</string>
+    <string name="empty_field_message">Kolom %1$s tidak boleh kosong</string>
+    <string name="home">Beranda</string>
+    <string name="news">Berita</string>
+    <string name="reminder">Pengingat</string>
+    <string name="profile">Profil</string>
+    <string name="next">Selanjutnya</string>
+    <string name="start">Mulai</string>
+    <string name="fragment_auth_title">Selamat datang di</string>
+    <string name="fragment_auth_button_sign_up_text">Daftar di sini</string>
+    <string name="fragment_auth_button_google_sign_in_text">Masuk dengan Google</string>
+    <string name="fragment_auth_button_anonymous_sign_in_text">Mau mencoba langsung?</string>
+    <string name="fragment_auth_button_sign_in_text">Sudah punya akun? Masuk di sini</string>
+    <string name="fragment_auth_failure_message">Tidak dapat masuk, silahkan coba lagi</string>
+    <string name="fragment_auth_signing_in_user_message">Memasukkan user…</string>
+    <string name="nik">NIK</string>
+    <string name="full_name">Nama lengkap</string>
+    <string name="position">Jabatan</string>
+    <string name="home_address">Alamat rumah</string>
+    <string name="phone_number">Nomor telepon</string>
+    <string name="email_address">Alamat email</string>
+    <string name="password">Password</string>
+    <string name="password_confirmation">Konfirmasi password</string>
+    <string name="fragment_sign_up_check_box_tac_text">Dengan mendaftar, saya setuju akan syarat dan ketentuan Lawanyuk</string>
+    <string name="sign_up">Daftar</string>
+    <string name="fragment_sign_up_weak_password_message">Password minimal 8 karakter</string>
+    <string name="fragment_sign_up_confirmation_password_doesnt_match">Password tidak cocok</string>
+    <string name="fragment_sign_up_email_address_already_registered_message">Alamat email sudah terdaftar</string>
+    <string name="fragment_sign_up_email_address_malformed_message">Format alamat email salah</string>
+    <string name="fragment_sign_up_failure_message">Tidak dapat mendaftar, silahkan coba lagi</string>
+    <string name="fragment_sign_up_signing_up_user_button_text">Mendaftarkan user…</string>
+    <string name="report_category_name_puddle">Genangan</string>
+    <string name="report_category_name_trash">Sampah</string>
+    <string name="report_category_name_other">Lainnya</string>
+    <string name="location">Lokasi</string>
+    <string name="description">Deskripsi</string>
+    <string name="date">Tanggal</string>
+    <string name="additional_information">Informasi tambahan</string>
+    <string name="text_input_layout_helper_text_field_not_required">*tidak wajib diisi</string>
+    <string name="add_photo">Tambahkan foto</string>
+    <string name="fragment_create_report_button_create_text">Buat laporan</string>
+    <string name="app_name_pro">Lawanyuk Pro</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="no">Tidak</string>
+    <string name="home_fragment_sign_out_dialog_message">Apakah kamu ingin keluar?</string>
+    <string name="yes">Ya</string>
+    <string name="content_desc_fragment_machine_learning_image_view">Foto nyamuk</string>
+    <string name="fragment_machine_learning_button_choose_photo">Pilih foto nyamuk</string>
+    <string name="fragment_machine_learning_info_panel_source_attribution_text">Diambil dari Wikipedia</string>
+    <string name="content_desc_fragment_machine_learning_info_panel_mosquito_picture">Gambar nyamuk</string>
+    <string name="fragment_machine_learning_info_panel_section_mosquito_features_text">Ciri-ciri</string>
+    <string name="fragment_machine_learning_info_panel_section_mosquito_species_text">Species</string>
+    <string name="fragment_machine_learning_info_panel_section_mosquito_carried_diseases_text">Penyakit</string>
+    <string name="fragment_machine_learning_intent_choose_photo_title">Pilih foto nyamuk</string>
+    <string name="fragment_machine_learning_analyze_photo_failure_message">Gagal menganalisis foto, silahkan coba lagi</string>
+    <string name="fragment_machine_learning_analyze_photo_loading_message">Menganalisis foto…</string>
+    <string name="fragment_machine_learning_analyze_photo_cannot_identify_photo_message">Tidak dapat menganalisis foto, coba foto yang lain</string>
+    <string name="refresh">Segarkan</string>
+    <string name="share">Sebarkan</string>
+    <string name="download">Download</string>
+    <string name="sign_in">Masuk</string>
+    <string name="content_desc_item_report_photo_image">Foto laporan</string>
+    <string name="fragment_sign_in_wrong_credential_message">Alamat email atau password salah</string>
+    <string name="fragment_sign_in_signing_in_user_button_text">Memasukkan user…</string>
+    <string name="fragment_create_report_intent_add_report_photo_title">Tambahkan foto laporan</string>
+    <string name="fragment_create_report_category_not_selected_message">Pilih kategori laporan terlebih dahulu</string>
+    <string name="fragment_create_report_empty_photo_message">Pilih foto laporan terlebih dahulu</string>
+    <string name="content_desc_illustration">Ilustrasi</string>
+    <string name="finish">Selesai</string>
+    <string name="fragment_report_created_message">Laporan anda akan segera ditindaklanjuti oleh pihak terkait, terima kasih sudah berkontribusi untuk membebaskan Indonesia dari penyakit DBD</string>
+    <string name="fragment_report_created_title">Terima kasih telah melapor!</string>
+    <string name="fragment_create_report_loading_message">Membuat laporan…</string>
+    <string name="fragment_create_report_failure_message">Tidak dapat membuat laporan, silahkan coba lagi</string>
+    <string name="item_report_user_text">Dilaporkan oleh %1$s</string>
+    <string name="content_desc_app_logo">Logo aplikasi</string>
+    <string name="password_placeholder">********</string>
+    <string name="state_error_message">Galat tak terduga telah terjadi</string>
+    <string name="state_empty_message">Tidak ada apa-apa di sini</string>
+    <string name="fragment_home_menu_report_text">Laporkan persebaran DBD</string>
+    <string name="fragment_home_menu_consultation_text">Konsultasi dengan dokter</string>
+    <string name="fragment_home_menu_medical_facility_text">Fasilitas kesehatan terdekat</string>
+    <string name="fragment_home_menu_machine_learning_text">Deteksi jenis nyamuk</string>
+    <string name="fragment_home_guest_name_placeholder">Tamu</string>
+    <string name="content_desc_profile_picture">Foto profil</string>
+    <string name="fragment_sign_up_check_box_tac_not_checked_message">Anda harus menyetujui syarat dan ketentuan Lawanyuk untuk dapat mendaftar</string>
+    <string-array name="onboarding_titles">
+        <item>Laporkan penyebaran</item>
+        <item>Konsultasi langsung dengan pakar kesehatan</item>
+        <item>Dapatkan informasi terkini mengenai DBD</item>
+    </string-array>
+    <string-array name="onboarding_subtitles">
+        <item>Laporkan penyebab penyebaran nyamuk demam berdarah secara langsung</item>
+        <item>Konsultasikan keluhan yang mirip gejala DBD dengan dokter atau praktisi kesehatan</item>
+        <item>Informasi terkini mengenai DBD dan lokasi layanan kesehatan terdetekan dapat diakses langsung melalui aplikasi Lawanyuk</item>
+    </string-array>
+    <string-array name="mosquito_information_mosquito_names">
+        <item>Aedes</item>
+        <item>Mansonia</item>
+        <item>Culex</item>
+        <item>Anopheles</item>
+    </string-array>
+    <string-array name="mosquito_information_mosquito_features">
+        <item>1. Aedes biasa dikenal dengan belang hitam putih pada badan dan kakinya.\n2. Aedes biasanya menggigit pada awal pagi dan waktu senja.\n3. Aedes berkembang biak dalam air jernih yang ditampung, baik di dalam atau di luar rumah.</item>
+        <item>1. Besar, berwarna hitam atau coklat dengan kilauan pada bagian kaki dan sayap\n2. Berkembang pada kubangan air atau kolam serta beberapa tanaman air</item>
+        <item>1. Sering dijumpai di rumah terutama spesies (Culex pipiens)\n2. Berkembang biak pada kubangan, kamar mandi, dan tempat yang kurang terjamah cahaya</item>
+        <item>1. Dikenal sebagai penyebar penyakit malaria\n2. Banyak dijumpai di wilayah tropis terutama di hutan</item>
+    </string-array>
+    <string-array name="mosquito_information_mosquito_species">
+        <item>1. Aedes aegypti\n2. Aedes albopictus\n3. dll</item>
+        <item>1. Mansonia titilans\n2. Mansonia uniformis\n3. dll</item>
+        <item>1. Culex pipiens\n2. Culex pipiens molestus\n3. dll</item>
+        <item>1. Anopheles gambiae\n2. Anopheles funestus\n3. dll</item>
+    </string-array>
+    <string-array name="mosquito_information_mosquito_carried_diseases">
+        <item>1. Demam Berdarah Dengue\n2. Demam Kuning</item>
+        <item>1. Filariasis atau Kaki Gajah</item>
+        <item>1. Virus Zika\n2. Filariasis atau Kaki Gajah\n3. Avian Malaria</item>
+        <item>1. Malaria</item>
+    </string-array>
+</resources>

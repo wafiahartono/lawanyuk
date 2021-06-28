@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="fragment_report_list_report_item_spacing">8dp</dimen>
+    <dimen name="report_photo_adapter_spacing">2dp</dimen>
+    <dimen name="default_corner_size">8dp</dimen>
+    <dimen name="report_photo_stroke_width">8dp</dimen>
+
+</resources>

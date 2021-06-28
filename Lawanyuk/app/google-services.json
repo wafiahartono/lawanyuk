@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "735067390985",
+    "firebase_url": "https://lawanyuk-a7651.firebaseio.com",
+    "project_id": "lawanyuk-a7651",
+    "storage_bucket": "lawanyuk-a7651.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735067390985:android:ea9fc3ffc48f6ed6e264d8",
+        "android_client_info": {
+          "package_name": "com.lawanyuk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735067390985-ivr14b46l80da7251fbi97ajjmvq6oid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lawanyuk",
+            "certificate_hash": "c882af7855ee6f31d95eb37daaa982a7057ebbb4"
+          }
+        },
+        {
+          "client_id": "735067390985-bomvqnhcqut09km1d8hlh639v3ui6e6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lawanyuk",
+            "certificate_hash": "a670622965d7e337256430f36a5713abd14ddf91"
+          }
+        },
+        {
+          "client_id": "735067390985-hf9sr5bd2c7cb2qpnun1ki687g7lovok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0hR9j1iH4D0mLAbQLtLZxztTQTDshxOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735067390985-hf9sr5bd2c7cb2qpnun1ki687g7lovok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
